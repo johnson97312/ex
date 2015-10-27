@@ -1,0 +1,23 @@
+package work1009;
+
+import java.util.Scanner;
+
+public class binary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Input Value and base：");
+		int a = scn.nextInt();
+		int b = scn.nextInt();
+		System.out.print(fac(a, b));
+	}
+
+	public static String fac(int v1, int v2) {
+		if (v1 < 1) {
+			return Integer.toString(v1);
+		} else {
+			return fac(v1/v2,v2)+Integer.toString(v1%v2);
+		}
+	}
+}
